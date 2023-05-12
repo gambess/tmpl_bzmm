@@ -9,15 +9,6 @@
 
 }
 
-@font-face {
-    font-family: 'abeat';
-    src: url('../fonts/abeakrg-webfont.woff2') format('woff2'),
-         url('../fonts/abeakrg-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 html {
   overflow-x: hidden;
 }
@@ -622,7 +613,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #000;
+  color: #fff;
   font-weight: 700;
   padding: 8px 17px;
   margin-top: 15px;
@@ -864,13 +855,13 @@ a.back-to-top:hover, a.back-to-top:focus {
   line-height: 48px;
   font-weight: 700;
   margin-bottom: 30px;
-  font-family: 'abeat', 'creamdemo', sans-serif;
+  font-family: 'creamdemo', sans-serif;
 }
 
 #hero-area .contents span.head-subtitle {
   color: #B81215 !important;
   font-size: 50px;
-  font-family: 'abeat', 'creamdemo', sans-serif;
+  font-family: 'creamdemo', sans-serif;
   display:inline; 
 }
 
