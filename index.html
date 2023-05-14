@@ -15,6 +15,8 @@
         <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
         <!-- Owl carousel -->
         <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+        <!-- Nivo -->
+        <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
         <!-- Animate -->
         <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
         <!-- Main Style -->
@@ -170,12 +172,12 @@
 
 
 
-        <!-- Services Section Start -->
+        <!-- Products Section Start -->
         <section id="services" class="section-padding">
             <h2 class="section-title">Productos</h2>
             <div class="container">
                 <div class="row">
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <div class="img-thumb">
@@ -187,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
                             <!--              <div class="icon">
@@ -202,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <!--              <div class="icon">
@@ -217,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -232,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -247,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -262,7 +264,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -277,7 +279,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -292,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Services item -->
+                    <!-- Products item -->
                     <div class="col-md-6 col-lg-4 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
                             <!--              <div class="icon">
@@ -310,7 +312,7 @@
                 </div>
             </div>
         </section>
-        <!-- Services Section End -->
+        <!-- Products Section End -->
 
 
 
@@ -1322,8 +1324,6 @@
         <script src="assets/js/form-validator.min.js"></script>
         <script src="assets/js/contact-form-script.min.js"></script>
         <script>
-//            var portfolio = document.querySelector('#portfolio');
-//            var mixer = mixitup(portfolio);
 
             jQuery(function () {
                 
@@ -1340,6 +1340,10 @@
                     }
                 });
                 
+            });
+            
+            $(document).ready(function () {
+                $('a.preview').nivoLightbox();
             });
 
         </script>
