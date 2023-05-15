@@ -246,6 +246,10 @@ button:focus {
   background: #1260A2;
 }
 
+.social-icon .youtube:hover {
+  background: #D6274D;
+}
+
 .social-icon .google:hover {
   background: #CE332A;
 }
@@ -1820,6 +1824,14 @@ textarea {
   top: 0px;
   right: 0px;
   border-bottom-left-radius: 0;
+}
+#schedule {
+    padding-bottom: 35px;
+}
+
+.schedule-title {
+    text-align: center;
+    
 }
 
 .error-content {
