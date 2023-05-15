@@ -1789,6 +1789,10 @@ textarea {
   width: 100%;
 }
 
+.container.map {
+    padding-bottom: 40px;
+}
+
 .subscribes {
   background: #f7f7f7;
 }
