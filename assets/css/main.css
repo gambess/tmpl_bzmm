@@ -119,8 +119,8 @@ ul li, ol li {
   text-align: center;
   letter-spacing: 1px;
   line-height: 1;
-  margin-bottom: 48px;
-  padding: 0 10px;
+  margin-bottom: 15px;
+  padding: 0 7px;
   position: relative;
 }
 
@@ -521,7 +521,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 /* Services Item */
 .services-item {
-  padding: 48px 20px;
+  padding: 15px 20px;
   border-radius: 4px;
   text-align: center;
   transition: all 0.3s ease-in-out 0s;
@@ -869,7 +869,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #hero-area .contents span.head-subtitle {
   color: #B81215 !important;
-  font-size: 50px;
+  /*font-size: 50px;*/
   font-family: 'abeat', 'creamdemo', sans-serif;
   display:inline; 
 }

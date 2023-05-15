@@ -51,11 +51,6 @@
                                     Inicio
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">
-                                    Nosotros
-                                </a>
-                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Productos <i class="lni-chevron-down"></i>
@@ -64,13 +59,17 @@
                                     <a class="dropdown-item" href="services.html">Paelleras</a>
                                     <a class="dropdown-item" href="pricing.html">Quemadores</a>
                                     <a class="dropdown-item" href="team.html">Trípodes</a>
-                                    <a class="dropdown-item" href="404.html">Sartenes</a>
-                                    <a class="dropdown-item" href="404.html">Cazuelas</a>
+                                    <a class="dropdown-item" href="404.html">Sartenes y Cazuelas</a>
                                     <a class="dropdown-item" href="404.html">Planchas asadoras</a>
                                     <a class="dropdown-item" href="404.html">Accesorios y complementos</a>
                                     <a class="dropdown-item" href="404.html">Kits Paelleros</a>
                                     <a class="dropdown-item" href="404.html">Kits Parrilleros</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">
+                                    Nosotros
+                                </a>
                             </li>
                             <!--                            
                                                         <li class="nav-item">
@@ -87,7 +86,7 @@
                                     <a class="dropdown-item" href="blog.html">Imagenes</a>
                                     <a class="dropdown-item" href="blog-left-sidebar.html">Videos</a>
                                     <a class="dropdown-item" href="blog-grid-full-width.html">Eventos</a>
-                                    <a class="dropdown-item" href="blog-detail.html">Exposiciones</a>
+                                    <a class="dropdown-item" href="blog-detail.html">Recetas</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -105,21 +104,20 @@
                         <a class="active" href="index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="about.html">Nosotros</a>
-                    </li>
-                    <li>
                         <a href="#">Productos</a>
                         <ul class="dropdown">
                             <li><a href="services.html">Paelleras</a></li>
                             <li><a href="pricing.html">Quemadores</a></li>
                             <li><a href="team.html">Trípodes</a></li>
-                            <li><a href="404.html">Sartenes</a></li>
-                            <li><a href="404.html">Cazuelas</a></li>
+                            <li><a href="404.html">Sartenes y Cazuelas</a></li>
                             <li><a href="404.html">Planchas asadoras</a></li>
                             <li><a href="404.html">Accesorios y complementos</a></li>
                             <li><a href="404.html">Kits Paelleros</a></li>
                             <li><a href="404.html">Page 404</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">Nosotros</a>
                     </li>
                     <li>
                         <a href="portfolio.html">Catalogo</a>
@@ -130,7 +128,7 @@
                             <li><a href="blog.html">Imagenes</a></li>
                             <li><a href="blog-left-sidebar.html">Videos</a></li>
                             <li><a href="blog-grid-full-width.html">Eventos</a></li>
-                            <li><a href="blog-grid-full-width.html">Exposiciones</a></li>
+                            <li><a href="blog-grid-full-width.html">Recetas</a></li>
                             <!--                            
                                                         <li><a href="blog-detail.html">Promociones</a></li>
                             -->
@@ -176,22 +174,22 @@
         <section id="services" class="section-padding">
             <h2 class="section-title">Productos</h2>
             <div class="container">
-                <div class="row">
+                <div class="row controls">
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <div class="img-thumb">
                                 <img class="img-fluid" src="assets/img/categories/paelleras.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Paelleras</a></h3>
+                                <h3><a class="filter" data-filter=.paellera>Paelleras</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <!--              <div class="icon">
                                             <i class="lni-leaf"></i>
                                           </div>-->
@@ -199,13 +197,13 @@
                                 <img class="img-fluid" src="assets/img/categories/quemadores.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Quemadores</a></h3>
+                                <h3><a class="filter" data-filter=.quemador>Quemadores</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <!--              <div class="icon">
                                             <i class="lni-briefcase"></i>
@@ -214,14 +212,14 @@
                                 <img class="img-fluid" src="assets/img/categories/tripodes.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Trípodes</a></h3>
+                                <h3><a class="filter" data-filter=.tripode>Trípodes</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
                             <!--              <div class="icon">
                                             <i class="lni-bullhorn"></i>
                                           </div>-->
@@ -229,29 +227,31 @@
                                 <img class="img-fluid" src="assets/img/categories/sartenes.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Sartenes</a></h3>
+                                <h3><a class="filter" data-filter=.sarten>Sartenes y Cazuelas</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
+<!--                    
+                    <div class="col-md-6 col-lg-3 col-xs-12">
                         <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-                            <!--              <div class="icon">
+                                          <div class="icon">
                                             <i class="lni-bullhorn"></i>
-                                          </div>-->
+                                          </div>
                             <div class="img-thumb">
                                 <img class="img-fluid" src="assets/img/categories/ollas.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Cazuelas</a></h3>
-                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
+                                <h3><a class="filter" data-filter=.olla>Cazuelas</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
                             </div>
                         </div>
                     </div>
+                    -->
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
                             <!--              <div class="icon">
                                             <i class="lni-cloud"></i>
                                           </div>-->
@@ -259,14 +259,14 @@
                                 <img class="img-fluid" src="assets/img/categories/planchas.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Planchas asadoras</a></h3>
+                                <h3><a class="filter" data-filter=.plancha>Planchas asadoras</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
                             <!--              <div class="icon">
                                             <i class="lni-pencil-alt"></i>
                                           </div>-->
@@ -274,14 +274,14 @@
                                 <img class="img-fluid" src="assets/img/categories/accesorios.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Accesorios y complementos</a></h3>
+                                <h3><a class="filter" data-filter=.accesorio>Accesorios y complementos</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.6">
                             <!--              <div class="icon">
                                             <i class="lni-pencil-alt"></i>
                                           </div>-->
@@ -289,14 +289,14 @@
                                 <img class="img-fluid" src="assets/img/categories/kit-paelleros.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Kits Paelleros</a></h3>
+                                <h3><a class="filter" data-filter=.kit1>Kits Paelleros</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                     <!-- Products item -->
-                    <div class="col-md-6 col-lg-4 col-xs-12">
-                        <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+                    <div class="col-md-6 col-lg-3 col-xs-12">
+                        <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
                             <!--              <div class="icon">
                                             <i class="lni-pencil-alt"></i>
                                           </div>-->
@@ -304,59 +304,13 @@
                                 <img class="img-fluid" src="assets/img/categories/kit-parrilleros.png" alt="">
                             </div>
                             <div class="services-content">
-                                <h3><a href="#">Kits Parrilleros</a></h3>
+                                <h3><a class="filter" data-filter=.kit2>Kits Parrilleros</a></h3>
                                 <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>-->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Products Section End -->
-
-
-
-        <!-- Portfolio Section -->
-        <section id="portfolios" class="section-padding">
-
-            <div class="container">
-                <h2 class="section-title">Productos</h2>
                 <div class=row>
-                    <div class=col-12>
-                        <div class="controls text-center">
-                            <a class="filter active btn btn-common" data-filter=all>
-                                Todos
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.paellera>
-                                Paelleras
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.quemador>
-                                Quemadores
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.tripode>
-                                Tr&iacute;podes
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.sarten>
-                                Sartenes
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.olla>
-                                Cazuelas
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.plancha>
-                                Planchas Asadoras
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.accesorio>
-                                Accesorios y Complementos
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.kit1>
-                                Kits Paelleros
-                            </a>
-                            <a class="filter btn btn-common" data-filter=.kit2>
-                                Kits Parrilleros
-                            </a>
-                        </div>
-                    </div>
-
                     <div id="portfolio" class="row wow fadeInDown">
                         <div class="col-sm-12 col-md-6 col-lg-4 col-xs-12 mix paellera">
                             <div class="portfolio-item">
@@ -366,7 +320,7 @@
                                         <div class="vertical-middle">
                                             <div>
                                                 <div class="icons">
-                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-1.jpg">
+                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-1.jpg" title="Paellera Esmaltada">
                                                         <i class="lni-eye"></i>
                                                     </a>
                                                     <a class="link" href="#">
@@ -389,7 +343,7 @@
                                         <div class="vertical-middle">
                                             <div>
                                                 <div class="icons">
-                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-2.jpg">
+                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-2.jpg" title="Paellera Pulida">
                                                         <i class=lni-eye></i>
                                                     </a>
                                                     <a class="link" href="#">
@@ -412,7 +366,7 @@
                                         <div class="vertical-middle">
                                             <div>
                                                 <div class="icons">
-                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-3.jpg">
+                                                    <a class="lightbox preview" href="assets/img/gallery/paelleras-3.jpg" title="Paellera Pulida">
                                                         <i class="lni-eye"></i>
                                                     </a>
                                                     <a class="link" href="#">
@@ -1165,6 +1119,16 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Products Section End -->
+
+
+
+        <!-- Portfolio Section -->
+        <section id="portfolios" class="section-padding">
+            <div class="container">
+                
             </div>
         </section>
         <!-- Portfolio Section Ends --> 
