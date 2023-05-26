@@ -1877,6 +1877,11 @@ textarea {
   text-decoration: underline;
 }
 
+.video-item {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer Area Start */
 .footer-area {
   background: #2C2C2C;
