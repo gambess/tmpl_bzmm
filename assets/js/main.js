@@ -26,8 +26,8 @@
         allowParentLinks: true,
         duplicate: true,
         label: '',
-        closedSymbol: '<i class="lni-chevron-right"></i>',
-        openedSymbol: '<i class="lni-chevron-down"></i>',
+        closedSymbol: '<i class="lni lni-chevron-right"></i>',
+        openedSymbol: '<i class="lni lni-chevron-down"></i>',
       });
 
       /* WOW Scroll Spy
