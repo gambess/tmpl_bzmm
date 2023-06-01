@@ -25,7 +25,26 @@
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
         <!-- Favicon -->
         <link href="assets/img/paelleras.ico" rel="icon">
-
+        <style>
+            img.btn-whatsapp {
+                display: block !important;
+                position: fixed;
+                z-index: 9999999;
+                bottom: 18px;
+                right: 56px;
+                cursor: pointer;
+                border-radius:100px !important;
+                width: 40px;
+                height: 40px;
+            }
+            img.btn-whatsapp:hover{
+                border-radius:100px !important;
+                -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+                -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+                box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+                transition-duration: 1s;
+            }
+        </style>
     </head>
     <body>
         <header id=header-wrap>
@@ -287,13 +306,13 @@
                             <a class="youtube" href="https://www.youtube.com/channel/UCAnZjCWlH6bjj1RiYkiXD7g" title="S&iacute;guenos en Youtube" target="_blank" rel="noopener noreferrer"><i class="lni lni-youtube"></i></a>
                             <!--<a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>-->
                         </div>
-                        <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
+<!--                        <form method="post" id="subscribe-form" name="subscribe-form" class="validate">
                             <div class="form-group is-empty">
                                 <input type="email" value="" name="Email" class="form-control" id="EMAIL" placeholder="correo electr&oacute;nico" required="">
                                 <button type="submit" name="subscribe" id="subscribes" class="btn btn-common sub-btn"><i class="lni lni-check-box"></i></button>
                                 <div class="clearfix"></div>
                             </div>
-                        </form>
+                        </form>-->
                     </div>
                 </div>
             </div>  
@@ -311,6 +330,8 @@
             </div>
         </section>   
         <!-- Copyright Section End -->
+        
+        <img class="btn-whatsapp" src="assets/img/whatsapp.png" alt="Whatsapp" onclick="window.location.href = 'https://wa.me/51960427434?text=Hola%20deseo%20más%20información%20sobre%20los%20productos%20por%20favor.'">
 
         <!-- Go to Top Link -->
         <a href="#" class="back-to-top">

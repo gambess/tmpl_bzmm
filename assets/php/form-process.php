@@ -23,7 +23,6 @@ if (empty($_POST["msg_subject"])) {
     $msg_subject = $_POST["msg_subject"];
 }
 
-
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
@@ -31,27 +30,36 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 
-
 $EmailTo = "info@paellerasperu.com";
-$Subject = "New Message Received";
+$Subject = "Nuevo correo electronico desde la pagina paellerasperu.com";
 
+//$headers = "From: $email";
+//$headers = "From: web-page@paellerasperu.com";
+$headers = 'From: web-page@paellerasperu.com'."\r\n" . 'Reply-To: '.$email;
+
+$extraHeaders = '-fweb-page@paellerasperu.com';
+
+$Greetings = "Saludos Paelleros.\n Este es el correo electronico enviado desde la pagina paellerasperu.com";
 // prepare email body text
 $Body = "";
-$Body .= "Name: ";
+$Body .= $Greetings;
+$Body .= "\n";
+$Body .= "Nombre: ";
 $Body .= $name;
 $Body .= "\n";
-$Body .= "Email: ";
+$Body .= "Correo Electronico: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "Subject: ";
+$Body .= "Asunto del Mensaje: ";
 $Body .= $msg_subject;
 $Body .= "\n";
-$Body .= "Message: ";
+$Body .= "Mensaje: ";
 $Body .= $message;
 $Body .= "\n";
 
+//die($EmailTo . $Subject . $Body . $headers . $extraHeaders);
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Subject, $Body, $headers, $extraHeaders);
 
 // redirect to success page
 if ($success && $errorMSG == ""){
@@ -63,5 +71,3 @@ if ($success && $errorMSG == ""){
         echo $errorMSG;
     }
 }
-
-?>
